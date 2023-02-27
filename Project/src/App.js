@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Routes, Route}
     from 'react-router-dom';
 import Home from './pages';
 import SignUp from './pages/SignUp';
+import Question from './pages/Question';
+import UsersHome from './pages/UsersHome';
   
 function App() {
 return (
@@ -14,6 +16,8 @@ return (
         <Route exact path='/' exact element={<Home />} />
         {/* add rountes */}
         <Route path='/sign-up' element={<SignUp/>} />
+        <Route path='/question' element={<Question/>} />
+        <Route path='/users-home' element={<UsersHome/>} />
     </Routes>
     </Router>
 );
