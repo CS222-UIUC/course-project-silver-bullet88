@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import '../App.js';
+
+// I am Zhuoang Tao. I work on this part of the project.
 
 const Question = () => {
   const [question,setTitle] = useState("e.g. What's your favourite color?");
