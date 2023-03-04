@@ -4,6 +4,8 @@ const UsersHome = () => {
   const user = {
     firstName: 'Madivh',
     lastName: 'Kassel',
+    phonenumber: 0000000000,
+    Gender: "none",
     email: 'zhuoang2@iilinois.edu',
     age: 20,
     college: 'UIUC',
