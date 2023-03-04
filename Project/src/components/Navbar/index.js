@@ -11,7 +11,7 @@ const Navbar = () => {
           {/* menu bar
           eg: bottom "Sign Up / Log In" will be the bar name and the above will be the link after clicking the button */}
           
-          <NavLink to="/sign-up" activeStyle>
+          <NavLink to="/login" activeStyle>
             Sign Up / Log In
           </NavLink>
         </NavMenu>
