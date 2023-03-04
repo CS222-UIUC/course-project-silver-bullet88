@@ -12,9 +12,9 @@ return (
     <Router>
     <Navbar />
     <Routes>
-        <Route exact path='/' exact element={<Home />} />
+        <Route exact path='/' element={<Home />} />
         {/* add rountes */}
-        {/* <Route path='/question' element={<Question/>} /> */}
+        <Route path='/question' element={<Question/>} />
         <Route path='/users-home' element={<UsersHome/>} />
     </Routes>
     </Router>
