@@ -8,6 +8,10 @@ test('renders login page', () => {
   expect(your_email).toBeInTheDocument();
   const your_pwd = screen.getByText("password");
   expect(your_pwd).toBeInTheDocument();
-  const greeting = screen.getByText("Nice to see u!");
-  expect(greeting).toBeInTheDocument();
+  const log_in = screen.getByText("Log In");
+  expect(log_in).toBeInTheDocument();  
+
+  
+  
+  
 });
