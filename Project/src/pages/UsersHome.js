@@ -1,29 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const UsersHome = () => {
-  const user = {
-    firstName: 'Madivh',
-    lastName: 'Kassel',
-    phonenumber: 0000000000,
-    Gender: "none",
-    email: 'zhuoang2@iilinois.edu',
-    age: 20,
-    college: 'UIUC',
-    bio: 'I am a computer sciecne student in UIUC. I love to write code and solve problems.',
-    interests: ['Programming', 'Gaming', 'Soccer'],
-  };
-
   return (
+
     <div>
-      <h1>{user.firstName}'s Homepage</h1>
-      <p>Name: {user.firstName} {user.lastName}</p>
-      <p>Email: {user.email}</p>
-      <p>Age: {user.age}</p>
-      <p>college: {user.college}</p>
-      <p>Bio: {user.bio}</p>
-      <p>Interests: {user.interests.join(', ')}</p>
+
+      <ul className='header'>
+        <li><a href='About'> About </a></li>
+        <li><a href='Received Questions'> Received Questions</a></li>
+      </ul>  
+
+      <h1>Invite your friends to ask!</h1> 
+      <h2>Below is the questions you received:</h2>
+
+
     </div>
-  );
+  )
 };
   
 export default UsersHome;

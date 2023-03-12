@@ -6,12 +6,16 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-        <h1>Ask Me</h1>
+        {/* <h1>Ask Me</h1> */}
         <NavMenu>
           {/* menu bar
           eg: bottom "Sign Up / Log In" will be the bar name and the above will be the link after clicking the button */}
           
-          <NavLink to="/login" activeStyle>
+          <NavLink activeStyle={{ color:'#5754a8' }} to="/home">
+            Ask Me
+          </NavLink>
+
+          <NavLink to="/login">
             Sign Up / Log In
           </NavLink>
         </NavMenu>

@@ -8,17 +8,21 @@ import Login from './pages/login';
 import Question from './pages/Question';
 import UsersHome from './pages/UsersHome';
   
+import './pages/UsersHome.css'
 function App() {
 return (
     <Router>
-    <Navbar />
-    <Routes>
-        <Route exact path='/' element={<Home />} />
-        {/* add rountes */}
-        <Route exact path='/login' element={<Login />} />
-        <Route path='/question' element={<Question/>} />
-        <Route path='/users-home' element={<UsersHome/>} />
-    </Routes>
+        <Navbar />
+        <Routes>
+            <Route path='/users-home' element={<UsersHome/>} />
+        </Routes>
+        <Routes>
+            <Route exact path='/home' element={<Home />} />
+            {/* add rountes */}
+            <Route exact path='/login' element={<Login />} />
+            <Route path='/question' element={<Question/>} />
+            
+        </Routes>
     </Router>
 );
 }
