@@ -75,3 +75,37 @@
   margin: 10px;
   font-size: 13px;
 }
+
+
+/* login part style - by Jinyu */
+.login{
+  text-align: center;
+  display: flex;
+  min-height: 89.5vh;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(79deg, #fcfced, #fcedfa 48%, #fcfced);
+}
+.login, .login-form { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.login label {
+  text-align: left;
+  padding: 0.25 rem 0;
+}
+.login input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+.login button {
+  border: none;
+  background-color:rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
