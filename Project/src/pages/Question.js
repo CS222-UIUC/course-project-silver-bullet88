@@ -1,13 +1,21 @@
-import React, { useState } from 'react';
-
-// I am Zhuoang Tao. I work on this part of the project.
+import React, { useState, useEffect } from 'react';
+import { collection, addDoc, getDocs } from "firebase/firestore";
+import {db} from '../firebase';
 
 const Question = () => {
-  const [question,setTitle] = useState("e.g. What's your favourite color?");
+  const [question,setBody] = useState("");
+
   const handleSubmit =(e)=>{
     e.preventDefault();
+    
     console.log(question);
-  }
+    try {
+      const docRef = addDoc(collection(db, "Questions"), {question});
+      console.log("Document written with ID: ", docRef.id);
+    } catch (e) {
+      console.error("Error adding document: ", e);
+    }
+  };
 
   return (
     <div className= "question">
@@ -16,10 +24,10 @@ const Question = () => {
         <textarea type = "text"
           required
           value={question}
-          onChange={(e)=>setTitle(e.target.value)}
+          onChange={(e)=>setBody(e.target.value)}  placeholder= "e.g What's your favorite color?" id="question" name="question" 
         />
+        <button>Send</button>
       </form>
-      <button>Send</button>
     </div> 
   );
 };
