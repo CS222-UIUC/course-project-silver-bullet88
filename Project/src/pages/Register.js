@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import {NavLink} 
     from "../components/Navbar/NavbarElements";
+import { BrowserRouter as Router, Routes, Route}
+    from 'react-router-dom';
 // I'll work on the signup page (Jinyu Ding)
 // !!!!!!! Pls don't edit this file <3
 const Register = () => {
@@ -23,20 +25,21 @@ const Register = () => {
       <form className = "login-form" onSubmit={handleSubmit}>
         {/* name */}
         <label htmlFor="name">Username</label>
-        <input value={name} name="name" id="name" type="email" placeholder='username' />
+        <input value={name} name="name" id="name" placeholder='username' />
         {/* email */}
-        <label htmlFor="email">Email</label>
+        <label for="email">Email</label>
         <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder='your email' id="email" name="email" />
         {/* password */}
-        <label htmlFor="password">Password</label>
+        <label for="password">Password</label>
         <input value={password} onChange={(e) => setPassword(e.target.value)} type="password" placeholder='your password' id="password" name="password" />
         {/* button */}
       <button className="button R-button" type="submit"> Create Account </button>
       </form>
       
-      <NavLink className="switch-link" to="/login">
-      Already have an account? Login here!
-      </NavLink>
+        <NavLink className="switch-link" to="/login">
+        Already have an account? Login here!
+        </NavLink>
+      
       
     </div>
 
