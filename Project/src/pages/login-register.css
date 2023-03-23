@@ -1,0 +1,45 @@
+/* login part style - by Jinyu */
+.login{
+  text-align: center;
+  display: flex;
+  min-height: 89.5vh;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(79deg, #fcfced, #fcedfa 48%, #fcfced);
+}
+.login, .login-form { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.login label {
+  text-align: left;
+  padding: 0.25 rem 0;
+}
+.login input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+.button {
+  width: 90px;
+  height: 40px;
+  border: none;
+  background-color:#e2b1eb;
+  padding: 5px;
+  
+  border-radius: 10px;
+  cursor: pointer;
+}
+.button:hover { 
+  background-color:rgb(212, 128, 227);
+}
+.R-button {  
+  width: 120px;
+}
+.switch-link:hover {
+  color:rgb(104, 24, 118);
+
+}
