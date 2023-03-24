@@ -1,21 +1,40 @@
-import React from 'react';
+import { collection, onSnapshot } from "firebase/firestore";
+import React, { useEffect, useState } from "react";
+import { db } from "../firebase";
+import "./UsersHome.css";
 
 const UsersHome = () => {
+  const [questions, setQuestions] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  console.log(questions);
+  useEffect(
+    () => 
+      onSnapshot(collection(db, "Questions"), (snapshot) => 
+        setQuestions(snapshot.docs.map(doc => ({...doc.data(), id: doc.id}))),
+        setLoading(false)
+      ), 
+      
+    [loading]
+  );
+
+  if (loading) {
+    return <h1>loading firebase data...</h1>;
+  }
+
   return (
-
-    <div>
-
-      <ul className='header'>
-        <li><a href='About'> About </a></li>
-        <li><a href='Received Questions'> Received Questions</a></li>
-      </ul>  
-
-      <h1>Invite your friends to ask!</h1> 
-      <h2>Below is the questions you received:</h2>
-
-
+    <div className="container">
+      <h1>Received Questions:</h1>
+      <ul>  
+        {questions.map((question) => (
+          <li key={question.id}>  
+            {question.question}
+          </li>
+        ))}
+      </ul>
+      <h1>no answers yet :(</h1>
     </div>
-  )
+  );
 };
-  
+
 export default UsersHome;

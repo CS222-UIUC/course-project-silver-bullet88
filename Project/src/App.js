@@ -15,14 +15,14 @@ return (
     <Router>
         <Navbar />
         <Routes>
-            <Route path='/users-home' element={<UsersHome/>} />
-        </Routes>
-        <Routes>
             <Route exact path='/home' element={<Home />} />
+            
             {/* add rountes */}
             <Route exact path='/login' element={<Login />} />
             <Route path='/register' element={<Register/>} />
             <Route path='/question' element={<Question/>} />
+
+            <Route path='/users-home' element={<UsersHome/>} />
             
         </Routes>
     </Router>
