@@ -6,9 +6,10 @@ import { BrowserRouter as Router, Routes, Route}
 import Home from './pages/Home';
 import Login from './pages/login';
 import Question from './pages/Question';
-import UsersHome from './pages/UsersHome';
-import Register from './pages/Register';  
-import './pages/UsersHome.css'
+import UsersHome from './pages/UsersHome/UsersHome';
+import Register from './pages/Register'; 
+// import './pages/UsersHome/flashcard' 
+// import './pages/UsersHome/UsersHome.css'
 import './pages/login-register.css'
 import './pages/Question.css'
 function App() {
