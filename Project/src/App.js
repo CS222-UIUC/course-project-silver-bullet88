@@ -17,7 +17,7 @@ return (
     <Router>
         <Navbar />
         <Routes>
-            <Route exact path='/home' element={<Home />} />
+            <Route exact path='/' element={<Home />} />
             
             {/* add rountes */}
             <Route exact path='/login' element={<Login />} />
