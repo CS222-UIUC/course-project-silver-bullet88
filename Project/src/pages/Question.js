@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { collection, addDoc, getDocs } from "firebase/firestore";
 import {db} from '../firebase';
 import Modal from "react-modal";
+import FlashcardList from "./UsersHome/FlashcardList.js";
 
 const Question = () => {
   
@@ -84,6 +85,9 @@ const Question = () => {
 
       </Modal>
       </form>
+      <div className="container">
+        <FlashcardList flashcards></FlashcardList>
+      </div>
     </div> 
   );
 };

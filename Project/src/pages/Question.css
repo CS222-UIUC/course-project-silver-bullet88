@@ -2,12 +2,15 @@
 .question {
     text-align: center;
     justify-content: center;
-    
+  }
+
+  body {
+    background: linear-gradient(79deg, #fcfced, #fcedfa 48%, #fcfced);
   }
   
   .question h1 {
     font-size: 36px;
-    color:#f1356d;
+    color:#FF6666;
     margin-bottom: 30px;
   }
   
@@ -15,7 +18,7 @@
     width: 300px;
     height: 150px;
     padding: 6px 10px;
-    border: 2px solid #f1356d;
+    border: 2px solid #FF6666;
     font-size: 16px;
     border-radius: 3px;
     display: block;
@@ -25,7 +28,7 @@
   }
   
   button {
-    background: #f1356d;
+    background: #FF6666;
     color: #fff;
     border: 0;
     border-radius: 12px;
