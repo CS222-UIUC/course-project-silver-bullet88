@@ -54,6 +54,9 @@
   --rotate-y: 180deg;
 }
 
+/* .card.click {
+  --rotate-y: 180deg;
+} */
 
 .card .front,
 .card .back {
@@ -65,6 +68,12 @@
 
 .card .back {
   transform: rotateY(180deg);
+}
+
+.card .back .back-Button {
+  cursor: pointer;
+  opacity: 0.8;
+  /* text-transform: uppercase; */
 }
 
 
