@@ -3,6 +3,7 @@ import {NavLink}
     from "../components/Navbar/NavbarElements";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import {db} from '../firebase';
+import UsersHome from "./UsersHome/UsersHome";
 // I'll work on the signup page (Jinyu Ding)
 // !!!!!!! Pls don't edit this file <3
 const Login = () => {
@@ -25,6 +26,7 @@ const Login = () => {
       if(doc.data().password === password) {
         console.log("success")
         setError(0);
+        window.location="/users-home"
       } else {
         console.log("failure")
         setError(1);
@@ -41,7 +43,7 @@ const Login = () => {
         style={{
         display: error===1 ? '' : 'none',
         }}>
-        <h4>Wrong pwd or email. Please enter again!</h4>
+        <h4>Wrong pwd or email. Please enter again! 🥺</h4>
     </div>
     );
   };
@@ -63,7 +65,6 @@ const Login = () => {
       {/* print error message */}
       <div className="messages"> {errorMessage()} </div>
     </div>
-    // </div>
   );
 };
 export default Login;

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { collection, addDoc, getDocs } from "firebase/firestore";
 import {db} from '../firebase';
 import Modal from "react-modal";
+import FlashcardList from "./UsersHome/FlashcardList.js";
 
 const Question = () => {
   
@@ -15,7 +16,8 @@ const Question = () => {
     
     console.log(question);
     try {
-      const docRef = addDoc(collection(db, "Questions"), {question});
+      var answer = "";
+      const docRef = addDoc(collection(db, "Questions"), {question,answer});
       console.log("Document written with ID: ", docRef.id);
     } catch (e) {
       console.error("Error adding document: ", e);
@@ -84,6 +86,9 @@ const Question = () => {
 
       </Modal>
       </form>
+      <div className="container">
+        <FlashcardList flashcards></FlashcardList>
+      </div>
     </div> 
   );
 };
