@@ -26,6 +26,11 @@ const Login = () => {
       if(doc.data().password === password) {
         console.log("success")
         setError(0);
+        // store login info into sessionStorage
+        sessionStorage.setItem("user_id", email);
+        // flag true if user logged in
+        sessionStorage.setItem("is_login", true);
+
         window.location="/users-home"
       } else {
         console.log("failure")
