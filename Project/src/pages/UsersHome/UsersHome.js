@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState }from "react";
 import "./UsersHome.css";
 import FlashcardList from "./FlashcardList";
 import {NavLink} 
     from "../../components/Navbar/NavbarElements";
 
 const UsersHome = ({flashcards}) => {
+  console.log()
+  // if user doesn't log in
+    if (! sessionStorage.getItem('is_login')) {
+      window.location="/"
+    } else {
     return (
       <div className="container">
         <FlashcardList flashcards={flashcards}></FlashcardList>
@@ -14,7 +19,7 @@ const UsersHome = ({flashcards}) => {
         </NavLink>
         
       </div>
-    )
+    )}
 };
 
 export default UsersHome;
