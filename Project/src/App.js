@@ -7,7 +7,8 @@ import Home from './pages/Home';
 import Login from './pages/login';
 import Question from './pages/Question';
 import UsersHome from './pages/UsersHome/UsersHome';
-import Register from './pages/Register'; 
+import Register from './pages/Register';
+import Contact from './pages/ContactUs';
 // import './pages/UsersHome/flashcard' 
 // import './pages/UsersHome/UsersHome.css'
 import './pages/login-register.css'
@@ -23,7 +24,7 @@ return (
             <Route exact path='/login' element={<Login />} />
             <Route path='/register' element={<Register/>} />
             <Route path='/question' element={<Question/>} />
-
+            <Route path='/contact-us' element={<Contact/>} />
             <Route path='/users-home' element={<UsersHome/>} />
             
         </Routes>

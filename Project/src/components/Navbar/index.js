@@ -23,6 +23,10 @@ const Navbar = () => {
             HomePage
           </NavLink>
 
+          <NavLink to="/contact-us">
+            Contact Us
+          </NavLink>
+
         </NavMenu>
       </Nav>
     </>
