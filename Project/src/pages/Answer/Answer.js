@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Answer.css";
 // import FlashcardList from "../UsersHome/FlashcardList";
-import { doc, getDoc, collection, onSnapshot } from "firebase/firestore";
+import { doc, getDoc, collection, onSnapshot, updateDoc } from "firebase/firestore";
 import { db } from "../../firebase";
 
 // async function getDocument (coll, id) {
@@ -23,47 +23,42 @@ const Answer = () => {
     const question_id = href.split('/')[4];
     console.log(question_id)
 
-    const [questions, setQuestions] = useState([]);
-    // useEffect(() => {
-    //     ;(async () => {
-    //         const docRef = doc(db, "Questions", question_id);
-    //         const docSnap = await getDoc(docRef);
-    //         const doc = snapshots.docs.map
-    //     })
-    // })
-
-    useEffect(
-        () => 
-          onSnapshot(collection(db, "Questions"), (snapshot) => 
-            setQuestions(snapshot.docs.map(doc => ({...doc.data(), id: doc.id})))
-          ), []
+    const delay = ms => new Promise(
+        resolve => setTimeout(resolve, ms)
       );
-    console.log(questions)
+      const [data,setBody] = useState("");
     
-    // getDoc(docRef)
-    //     .then((doc) => {
-    //         console.log(doc.data(), doc.id)
-    //     })
-    
-    function getDocByID(array, id) {
-        return array.find((element) => {
-            return element.id === id;
-          })
-    }
-
-    const doc = getDocByID(questions, question_id);
-    console.log(doc)
-    console.log(doc['question'])
-    // console.log(doc['id'])
+      const handleSubmit =async (e)=>{
+        e.preventDefault();
+        
+        console.log(data);
+        try {
+          const docRef = updateDoc(doc(db, "Questions", question_id), {answer: data});
+          console.log("Document written with ID: ", docRef.id);
+        } catch (e) {
+          console.error("Error updating document: ", e);
+        }
+        await delay(300);
+        setBody(data);
+      };
     
 
     return (
         <div>   
             <h1>Answer your Questions HERE!!!</h1>
-
+            <form onSubmit={handleSubmit}>
+        <textarea type = "text"
+          required
+          value={data}
+          onChange={(e)=>setBody(e.target.value)}  placeholder= "answer here!" id="answer" name="answer" 
+        />
+        <button onClick={handleSubmit} disabled={!data}> Send</button>
+        </form>
         </div>
-
     )
 };
 
 export default Answer;
+
+
+

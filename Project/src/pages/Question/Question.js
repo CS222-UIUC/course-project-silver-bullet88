@@ -77,7 +77,7 @@ const Question = () => {
             }
           }}
         >
-          <span onClick={toggleModal} class="close">&times;
+          <span onClick={toggleModal} className="close">&times;
           </span>
           <div>Submit Successfully!</div>
           <button onClick={toggleModal}>Ask another one!
