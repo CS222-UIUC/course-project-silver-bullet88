@@ -5,14 +5,14 @@ import { BrowserRouter as Router, Routes, Route}
     from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './pages/login';
-import Question from './pages/Question';
+import Question from './pages/Question/Question';
 import UsersHome from './pages/UsersHome/UsersHome';
 import Register from './pages/Register'; 
 import Answer from './pages/Answer/Answer';
 // import './pages/UsersHome/flashcard' 
 // import './pages/UsersHome/UsersHome.css'
 import './pages/login-register.css'
-import './pages/Question.css'
+import './pages/Question/Question.css'
 function App() {
 return (
     <Router>
