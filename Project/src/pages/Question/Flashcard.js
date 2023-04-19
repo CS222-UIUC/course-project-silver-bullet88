@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./UsersHome.css";
+import "../UsersHome/UsersHome.css";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
@@ -10,13 +10,11 @@ const Button = styled.button `
     &:hover {
         background-color: #283593;
     }
-    
 `
 
 export default function Flashcard({ flashcard }) {
     const [flip, setFlip] = useState(false)
     const [height, setHeight] = useState('initial')
-    const [buttonClick, setbuttonClick] = useState(false)
 
     console.log(useParams());
     let { questionID } = useParams();
@@ -42,7 +40,7 @@ export default function Flashcard({ flashcard }) {
         <div 
             className={`card ${flip ? 'flip' : ''}`}
             style={{ height: height }}
-            onClick={() => setFlip(!(flip || buttonClick))}
+            onClick={() => setFlip(!(flip ))}
         >   
             {/* front element */}
             <div className="front" ref={frontEl}>
@@ -55,13 +53,7 @@ export default function Flashcard({ flashcard }) {
                     {flashcard.answer}
                 </div>
                 
-                <div className="back-Button">
-                    <Link to={'/answer/'+questionID}>
-                        <Button onClick={() => setbuttonClick(true)}>
-                            Add Answer!
-                        </Button>
-                    </Link>
-                </div>
+                
             </div>
 
             {/* {flip ? flashcard.answer : flashcard.question} */}

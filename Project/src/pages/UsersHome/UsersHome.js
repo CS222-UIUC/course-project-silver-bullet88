@@ -1,4 +1,4 @@
-import React, { useState }from "react";
+import React from "react";
 import "./UsersHome.css";
 import FlashcardList from "./FlashcardList";
 import {NavLink} 
@@ -17,7 +17,6 @@ const UsersHome = ({flashcards}) => {
         <NavLink className="switch-link" to="/question">
         click here
         </NavLink>
-        
       </div>
     )}
 };
