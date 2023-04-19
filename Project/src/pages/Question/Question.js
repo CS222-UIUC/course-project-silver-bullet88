@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { collection, addDoc, getDocs } from "firebase/firestore";
-import {db} from '../firebase';
+import {db} from '../../firebase';
 import Modal from "react-modal";
-import FlashcardList from "./UsersHome/FlashcardList.js";
+import FlashcardList from "../Question/FlashcardList.js";
 
 const Question = () => {
   
