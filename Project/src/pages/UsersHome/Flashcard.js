@@ -10,6 +10,7 @@ const Button = styled.button `
     &:hover {
         background-color: #283593;
     }
+    
 `
 
 export default function Flashcard({ flashcard }) {
