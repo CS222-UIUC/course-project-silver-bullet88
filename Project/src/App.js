@@ -29,7 +29,7 @@ return (
             <Route path='/answer' element={<Answer/>} />
             <Route path='/contact-us' element={<Contact/>} />
             <Route 
-                path='/answer/:questionID' 
+                path='/answer/:questionID/:question' 
                 element={<Answer/>} 
             />
         </Routes>

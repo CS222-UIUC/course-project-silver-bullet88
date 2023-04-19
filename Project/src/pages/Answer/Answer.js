@@ -1,27 +1,17 @@
 import React, { useEffect, useState } from "react";
 import "./Answer.css";
-// import FlashcardList from "../UsersHome/FlashcardList";
 import { doc, getDoc, collection, onSnapshot, updateDoc } from "firebase/firestore";
 import { db } from "../../firebase";
 
-// async function getDocument (coll, id) {
-//     const snap = await getDoc(doc(db, coll, id))
-//     if (snap.exists())
-//       return snap.data()
-//     else
-//       return Promise.reject(Error(`No such document: ${coll}.${id}`))
-// }
-
-async function getDocument (docRef) {
-    const docSnap = await getDoc(docRef);
-    return docSnap
-}
 
 const Answer = () => {
 
     const href = window.location.href;
     const question_id = href.split('/')[4];
+    const question = href.split('/')[5];
+    console.log(href)
     console.log(question_id)
+    console.log(question)
 
     const delay = ms => new Promise(
         resolve => setTimeout(resolve, ms)
@@ -46,6 +36,7 @@ const Answer = () => {
     return (
         <div>   
             <h1>Answer your Questions HERE!!!</h1>
+            <h2>Question: {question}</h2>
             <form onSubmit={handleSubmit}>
         <textarea type = "text"
           required
