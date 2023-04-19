@@ -9,7 +9,6 @@ import Question from './pages/Question/Question';
 import UsersHome from './pages/UsersHome/UsersHome';
 import Register from './pages/Register'; 
 import Answer from './pages/Answer/Answer';
-import Contact from './pages/ContactUs'; 
 // import './pages/UsersHome/flashcard' 
 // import './pages/UsersHome/UsersHome.css'
 import './pages/login-register.css'
@@ -27,7 +26,6 @@ return (
             <Route path='/question' element={<Question/>} />
             <Route path='/users-home' element={<UsersHome/>} />
             <Route path='/answer' element={<Answer/>} />
-            <Route path='/contact-us' element={<Contact/>} />
             <Route 
                 path='/answer/:questionID' 
                 element={<Answer/>} 
