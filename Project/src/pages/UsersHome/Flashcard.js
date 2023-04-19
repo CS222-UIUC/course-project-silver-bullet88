@@ -56,7 +56,7 @@ export default function Flashcard({ flashcard }) {
                 </div>
                 
                 <div className="back-Button">
-                    <Link to={'/answer/'+questionID}>
+                    <Link to={'/answer/'+questionID + '/' + flashcard.question}>
                         <Button onClick={() => setbuttonClick(true)}>
                             Add Answer!
                         </Button>
