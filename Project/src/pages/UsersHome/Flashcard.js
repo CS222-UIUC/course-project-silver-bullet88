@@ -10,6 +10,7 @@ const Button = styled.button `
     &:hover {
         background-color: #283593;
     }
+    
 `
 
 export default function Flashcard({ flashcard }) {
@@ -55,7 +56,7 @@ export default function Flashcard({ flashcard }) {
                 </div>
                 
                 <div className="back-Button">
-                    <Link to={'/answer/'+questionID}>
+                    <Link to={'/answer/'+questionID + '/' + flashcard.question}>
                         <Button onClick={() => setbuttonClick(true)}>
                             Add Answer!
                         </Button>

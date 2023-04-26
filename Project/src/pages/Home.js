@@ -11,12 +11,9 @@ const Home = () => {
       </NavLink>
 
       <NavLink className="switch-link-usersHome" to="/users-home">
-        <h2>Click here for your HomePage (for logged in users only)</h2> 
+        <h2>Click here for HomePage (for logged in users only)</h2>
       </NavLink>
 
-      <NavLink className="switch-link-answer" to="/answer">
-        <h2>Click here to ANSWER questions you received</h2>
-      </NavLink>
     </div>
   );
 };
