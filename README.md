@@ -26,8 +26,13 @@ We use Javascript and React framework to write our backend code, with Google Fir
 ## Usage instructions:
 
 In the project directory, you can run:
+####   `npm install`
 
-### `npm start`
+####   `npm install react-modal`
+
+####   `npm install firebase`
+
+#### `npm start`
 
 Runs the app in the development mode.
 Open http://localhost:3000 to view it in your **CHROME**.
