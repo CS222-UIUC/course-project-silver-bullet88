@@ -17,7 +17,7 @@ By allowing anonymity, AskMe can also encourage people to ask more candid questi
 
 ## Components:
 ### Frontend: 
-We will use the HTML, CSS, JavaScript programming language and the React framework. We might use TypeScript as a transpiler but we haven’t decided yet. We chose HTML, CSS and JavaScript due to its speed, simplicity, and popularity. The benefit of the React framework includes having potential to reuse components and easy to use for building a rich UI. We will test our functionalities using React Testing Library which provides light utility functions for us to interact with our React components so that we can experience as a website user and make meaningful updates.
+We will use the HTML, CSS, JavaScript programming language and the React framework. We chose HTML, CSS and JavaScript due to its speed, simplicity, and popularity. The benefit of the React framework includes having potential to reuse components and easy to use for building a rich UI. We will test our functionalities using React Testing Library which provides light utility functions for us to interact with our React components so that we can experience as a website user and make meaningful updates.
 
 ### Backend: 
 
