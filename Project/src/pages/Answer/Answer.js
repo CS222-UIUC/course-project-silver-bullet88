@@ -1,14 +1,22 @@
 import React, { useEffect, useState } from "react";
 import "./Answer.css";
+import FlashcardList from "../UsersHome/FlashcardList"
 import { doc, getDoc, collection, onSnapshot, updateDoc } from "firebase/firestore";
 import { db } from "../../firebase";
 
 
-const Answer = () => {
+const Answer = ({flashcards}) => {
 
     const href = window.location.href;
     const question_id = href.split('/')[4];
-    const question = href.split('/')[5];
+    let question = href.split('/')[5];
+
+    if (question.indexOf('%20') > -1) {
+      const l = question.split('%20');
+      question = l.join(" ");
+      console.log(question);
+    }
+
     console.log(href)
     console.log(question_id)
     console.log(question)
@@ -34,17 +42,19 @@ const Answer = () => {
     
 
     return (
-        <div>   
+        <div className="Answerbox">   
             <h1>Answer your Questions HERE!!!</h1>
-            <h2>Question: {question}</h2>
+            <h2>Question to Answer: {question}</h2>
             <form onSubmit={handleSubmit}>
-        <textarea type = "text"
-          required
-          value={data}
-          onChange={(e)=>setBody(e.target.value)}  placeholder= "answer here!" id="answer" name="answer" 
-        />
-        <button onClick={handleSubmit} disabled={!data}> Send</button>
-        </form>
+              
+            <textarea type = "text"
+              required
+              value={data}
+              onChange={(e)=>setBody(e.target.value)}  placeholder= "answer here!" id="answer" name="answer" 
+            />
+            <button onClick={handleSubmit} disabled={!data}> Send</button>
+            </form>
+        {/* <FlashcardList flashcards={flashcards}></FlashcardList> */}
         </div>
     )
 };

@@ -1,0 +1,41 @@
+.Answerbox {
+    text-align: center;
+    justify-content: center;
+}
+
+.Answerbox h1 {
+    color: #dc539cef;
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+
+.Answerbox h2 {
+    color: #FF5F05;
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+
+.Answerbox textarea {
+    width: 300px;
+    height: 150px;
+    padding: 6px 10px;
+    border: 2px solid #FF6666;
+    font-size: 16px;
+    border-radius: 3px;
+    display: block;
+    resize: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  button {
+    background: #FF6666;
+    color: #fff;
+    border: 0;
+    border-radius: 12px;
+    cursor: pointer;
+    height: 30px;
+    
+    margin: 15px;
+    font-size: 13px;
+  }
