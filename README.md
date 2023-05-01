@@ -4,7 +4,7 @@
 
 Qi Wu (Calvin): qiwu4@illinois.edu
 
-Jincheng Xu (Frank): jx37@illinois.edu
+Jincheng Xu (Frank): jx37@illinois.edu 
 
 Jinyu Ding (Tina): jinyud2@illinois.edu
 
@@ -36,6 +36,23 @@ Languages
 Libraries
 - React
 - Firebase
+
+### Question page (Qi Wu)
+Role in the application
+- Allow users to ask questions and store these questions in firebase
+- Get data from firebase to show questions asked by other users
+- Update the flashcards for all pages once the question is successfully asked
+- Popup Windows to show whether a question is successfully asked
+
+Languages
+- JavaScript
+- HTML
+- CSS
+
+Libraries
+- React
+- Firebase
+
 ### Contact Us page
 Role in the application
 - Contact developers if users have any questions or suggestions
@@ -47,6 +64,7 @@ Languages
 
 Libraries
 - React
+
 ## Components
 ### Frontend
 We will use the HTML, CSS, JavaScript programming language and the React framework. We chose HTML, CSS and JavaScript due to its speed, simplicity, and popularity. The benefit of the React framework includes having potential to reuse components and easy to use for building a rich UI. We will test our functionalities using React Testing Library which provides light utility functions for us to interact with our React components so that we can experience as a website user and make meaningful updates.
