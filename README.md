@@ -2,11 +2,11 @@
 
 ## Team Members
 
-Qi Wu (Calvin): qiwu4@illinois.edu
+teammate1: Qi Wu (Calvin): qiwu4@illinois.edu
 
-Jincheng Xu (Frank): jx37@illinois.edu 
+teammate2: Jincheng Xu (Frank): jx37@illinois.edu 
 
-Jinyu Ding (Tina): jinyud2@illinois.edu
+teammate3: Jinyu Ding (Tina): jinyud2@illinois.edu
 
 ## Pitch
 
@@ -14,6 +14,19 @@ Jinyu Ding (Tina): jinyud2@illinois.edu
 
 The objective of AskMe is to provide individuals with a secure platform to pose personal or sensitive inquiries and receive responses, while maintaining anonymity. AskMe engenders a feeling of comfort and security, enabling individuals to express themselves openly and receive sincere answers.
 By allowing anonymity, AskMe can also encourage people to ask more candid questions and provide more honest answers, leading to deeper conversations and better understanding between friends. Additionally, it can also serve as an entertaining activity, such as playing truth or dare games.
+
+## Functionality
+- Login/ Sign up 
+
+- Homepage
+- - All questions you received
+- - - Click flashcards to answer
+
+- Question box
+- - Share question box link
+- - - Friends/ guests can enter questions
+- - - Display questions at the bottom
+- - - - Provide inspiration & get to know you more
 
 ## Technical Architecture
 ### Login & sign up pages (Jinyu Ding)
