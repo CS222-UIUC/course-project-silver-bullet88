@@ -53,6 +53,33 @@ Libraries
 - React
 - Firebase
 
+### UsersHome (Frank Xu)
+Role in the application
+- Display questions and answers users received with flashcards effect
+- Allow users to answer questions using the answer button on the back of each flashcard
+
+Languages
+- JavaScript
+- CSS
+
+Libraries
+- React
+- Firebase
+
+### Answer Page (Frank Xu)
+Role in the application
+- Allow users to answer questions and the answers received will be updated on the flashcards
+- Display the specific question that users need to answer
+- Have unique URL parameter for each question
+
+Languages
+- JavaScript
+- CSS
+
+Libraries
+- React
+- Firebase
+
 ### Contact Us page
 Role in the application
 - Contact developers if users have any questions or suggestions
