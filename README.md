@@ -15,6 +15,15 @@ teammate3: Jinyu Ding (Tina): jinyud2@illinois.edu
 The objective of AskMe is to provide individuals with a secure platform to pose personal or sensitive inquiries and receive responses, while maintaining anonymity. AskMe engenders a feeling of comfort and security, enabling individuals to express themselves openly and receive sincere answers.
 By allowing anonymity, AskMe can also encourage people to ask more candid questions and provide more honest answers, leading to deeper conversations and better understanding between friends. Additionally, it can also serve as an entertaining activity, such as playing truth or dare games.
 
+## Why "Ask Me"
+- Secure platform 
+
+- Anonymously
+
+- Ask anything you want without any pressure
+
+- Get to know more about your friends
+
 ## Functionality
 - Login/ Sign up 
 
